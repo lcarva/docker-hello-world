@@ -1,7 +1,7 @@
-FROM fedora:27
+FROM lucarval/docker-hello-world:1.0-9
 RUN echo "build stage"
 
-FROM fedora:latest
+FROM lucarval/docker-hello-world:1.0.multistage-1
 
 LABEL "com.redhat.component"="docker-hello-world" \
       "name"="lucarval/docker-hello-world" \
